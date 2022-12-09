@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, {useState} from 'react';
+import classes from './App.module.css';
+import {Button} from 'react-bootstrap';
+import Game from './components/Game/Game';
+import Wrapper from './components/Helpers/Wrapper';
 function App() {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isHelp, setIsHelp] = useState(false);
+  const handleReturn = () => {
+    console.log(isPlaying);
+    setIsPlaying(false);
+  }
+  const playGameHandle = () => {
+    setIsPlaying(true)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+    {isPlaying && <Game handleReturn={handleReturn}/>}
+
+    {!isPlaying &&
+    <main className={`${classes.menu} container d-flex flex-column align-items-center justify-content-center vh-100`}>
+        <h1 className={`${classes.title}`}>Black Jack</h1>
+       <section className={`row ${classes["play-game"]}} py-3`}>
+        <Button className={``} onClick={playGameHandle}>Play Game</Button>
+       </section>
+        <section className={`row ${classes.help} py-3`}>
+          <Button>Help</Button>
+        </section>
+        <section className={`row ${classes.option} py-3`}>
+          <Button>Option</Button>
+        </section>
+    </main>}
+    </Wrapper>
   );
 }
 

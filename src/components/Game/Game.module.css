@@ -1,0 +1,11 @@
+.game{
+    /* position: relative; */
+    height: 100vh;
+    z-index: -1;
+    transition: all 1s ease-in;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    
+}
