@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from "react";
 import { Button, Container, Figure, Row, Col, ButtonGroup} from "react-bootstrap";
+import {Sound} from 'react-sound';
 import classes from "./Game.module.css";
 import Card from "./Card/Card";
 import GameControl from "./GameControl/GameControl";
