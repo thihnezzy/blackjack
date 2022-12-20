@@ -72,12 +72,12 @@ const Game = ({handleReturn}) =>{
             id--;
         }
         setBet(e.target.getAttribute('data'));
-        console.log(bet);
         setDealerHand([...dealer]);
         setPlayerHand([...player]);
         setDeck(newDeck);
         setCardIndex(id)    
         setGameOver(false);
+        //
       };
       const checkResult = (dealerHand, playerHand) => {
         const playerValue = getHandValue(playerHand);
