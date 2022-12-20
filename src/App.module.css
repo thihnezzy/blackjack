@@ -18,7 +18,7 @@
 
 .menu {
   position: relative;
-  font-family: 'Libre Baskerville', serif;
+  
   font-size: 1.8rem !important;
   color: var(--primary-color-yellow);
   transition: all 0.3s ease-out;
