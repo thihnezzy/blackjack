@@ -29,5 +29,3 @@ Try out the game at the following link: [BlackJack]([https://demo-link.com](http
 ## Credits
 - Minimalist Playing Cards design by [Rohit Chouhan](https://www.figma.com/community/file/1002687996681319663)
 - Game Rules Design [Black Jack Rules](https://betandbeat.com/wp-content/uploads/2022/03/Blackjack-Rules.png)
-
-- Card graphics design by [Rohit Chouhan](https://www.figma.com/community/file/1002687996681319663)
