@@ -1,5 +1,14 @@
+:root{
+  --primary-color-purple: #B366FF;
+  --primary-color-yellow: #FFF066;
+  --secondary-color-background: #1A0033;
+  --secondary-color-button: #9933FF;
+  --button: hsl(270, 100%, 50%);
+  --text: #CC99FF;
+}
 .game{
     /* position: relative; */
+    color: var(--primary-color-yellow);
     height: 100vh;
     z-index: -1;
     transition: all 1s ease-in;
@@ -7,16 +16,32 @@
     -moz-transition: all 1s ease-in;
     -ms-transition: all 1s ease-in;
     -o-transition: all 1s ease-in;
-    
 }
-
+.hand{
+  text-shadow: 2px 2px 5px var(--primary-color-purple);
+}
+.card-holder{
+  gap: 2rem;
+}
+.budget{
+  color: var(--primary-color-yellow);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 5px var(--primary-color-purple);
+}
+.board-control{
+  margin: 3rem;
+}
+.board-control .hand{
+  margin-bottom: 1.5rem;
+}
 .custom-btn{
     padding: 0.5rem 0.5rem;
     margin: 1rem;
+    font-size: 1.5rem;
     font-weight: bolder;
+    border-radius: 10px;
     background-color: var(--button);
-    background-blend-mode: darken, luminosity;
-    font-size: 2rem;
     color: var(--primary-color-yellow);
     box-shadow: 0 10px 20px var(--text);
     text-shadow: 2px 2px 5px var(--primary-color-purple);
@@ -25,6 +50,10 @@
     -moz-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .custom-btn:hover{
     cursor: pointer;
@@ -37,52 +66,11 @@
     -ms-transform: translateY(-15px) ;
     -o-transform: translateY(-15px) ;
     transition: all  1s ease-out;
-    animation: animateButton 2s 0.5s infinite ;
-    -webkit-animation: animateButton 2s 0.5s infinite ;
-    -webkit-transition: all  1s ease-out;
-    -moz-transition: all  1s ease-out;
-    -ms-transition: all  1s ease-out;
-    -o-transition: all  1s ease-out;
   }
-  
-  @keyframes animateButton {
-    0%{
-      transform: scale(1.05);
-      -webkit-transform: scale();
-      -moz-transform: scale();
-      -ms-transform: scale();
-      -o-transform: scale();
-  }
-    25% {
-      transform: rotate(-10deg);
-      background-color: var(--button);
-      -webkit-transform: rotate(-10deg);
-      -moz-transform: rotate(-10deg);
-      -ms-transform: rotate(-10deg);
-      -o-transform: rotate(-10deg);
-  } 
-  50% {
-    transform: rotate(10deg);
-    background-color: var(--primary-color-purple);
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-  } 
-  75% {
-    transform: rotate(-10deg);
-    background-color: var(--button);
-    -webkit-transform: rotate(-10deg);
-    -moz-transform: rotate(-10deg);
-    -ms-transform: rotate(-10deg);
-    -o-transform: rotate(-10deg);
-  } 
-  100% {
-    transform: rotate(10deg);
-    background-color: var(--primary-color-purple);
-    -webkit-transform: rotate(10deg);
-    -moz-transform: rotate(10deg);
-    -ms-transform: rotate(10deg);
-    -o-transform: rotate(10deg);
-  } 
+  .back-to-menu{
+
+      position: absolute;
+      bottom: 0;
+      /* right: 50%; */
+      /* width: 100%; */
   }

@@ -2,9 +2,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: #1a003312;
+    background-color: #c493f100;
     border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 8px rgba(142, 44, 44, 0.26);
     -webkit-transform: translate(0, 0%);
     -moz-transform: translate(0, 0%);
     -ms-transform: translate(0, 0%);

@@ -4,7 +4,7 @@
   --primary-color-yellow: #FFF066;
   --secondary-color-background: #1A0033;
   --secondary-color-button: #9933FF;
-  --button: #8000FF;
+  --button: hsl(270, 100%, 50%);
   --text: #CC99FF;
 }
 *{
@@ -32,9 +32,14 @@
   top: 15%;
   font-size: 3rem;
   font-weight: 700;
+  letter-spacing: 2px;
   /* box-shadow: ; */
   -webkit-text-stroke-width: 3px;
-  text-shadow: 2px 5px 5px #93e44d;
+  text-shadow: 2px 5px 10px var(--primary-color-purple);
+}
+.logo{
+  margin-left: 1rem;
+  width: 6rem;
 }
 .menu section button{
   padding: 0.5rem 0.5rem;
@@ -112,3 +117,13 @@
   -o-transform: rotate(10deg);
 } 
 }
+@media screen and (max-height: 650px) {
+  .menu{
+    font-size: 1rem;
+  }
+  .title{
+    top: 10%;
+    font-size: 2rem;
+  }
+}
+  

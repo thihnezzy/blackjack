@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import Wrapper from '../Helpers/Wrapper';
 import classes from './ResultModal.module.css';
 
 
-const ResultModal = ({msg}) => {
+const ResultModal = ({msg,bet, resetBudget = false}) => {
   const [show, setShow] = useState(true);
 
   const handleClose = () => setShow(false);
@@ -17,13 +18,10 @@ const ResultModal = ({msg}) => {
 
       <Modal show={show} onHide={handleClose} className={`${classes["custom-modal"]}`}>
         <Modal.Header closeButton>
-          <Modal.Title>{msg}</Modal.Title>
+          {resetBudget && <Modal.Title>Reset Budget Successfully</Modal.Title>}
+          {!resetBudget && <Wrapper><Modal.Title>{msg}</Modal.Title></Wrapper>}
+          
         </Modal.Header>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );

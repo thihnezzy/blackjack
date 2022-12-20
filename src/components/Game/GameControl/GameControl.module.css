@@ -1,9 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+:root{
+  --primary-color-purple: #B366FF;
+  --primary-color-yellow: #FFF066;
+  --secondary-color-background: #1A0033;
+  --secondary-color-button: #9933FF;
+  --button: hsl(270, 100%, 50%);
+  --text: #CC99FF;
+}
+.bet-label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--primary-color-yellow);
+    text-shadow: 2px 2px 5px var(--primary-color-purple);
+    margin: 1rem;
+}
+.bet-input{
+    -webkit-appearance: none;
+    font-size: 1rem;
+    width: 150px;
+    color: var(--primary-color-yellow);
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
 .custom-btn{
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
     width: 30%;
     padding: 0.5rem 0.5rem;
     margin: 1rem;
     font-weight: bolder;
+    border-radius: 10px;
     background-color: var(--button);
     color: var(--primary-color-yellow);
     box-shadow: 0 10px 20px var(--text);
@@ -13,6 +40,10 @@
     -moz-transition: all 0.4s ease-out;
     -ms-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .custom-btn:hover{
     cursor: pointer;
