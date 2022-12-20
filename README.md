@@ -12,7 +12,7 @@ A classic blackjack game built with ReactJS and react-bootstrap. Play against th
 - Fun card graphics
 
 ## Demo
-Try out the game at the following link: [BlackJack]([https://demo-link.com](https://blackjack-thihnezzy.vercel.app/))
+Try out the game at the following link: [BlackJack](https://blackjack-thihnezzy.vercel.app/)
 
 ## Running the project locally
 1. Clone the repository and navigate to the project directory
