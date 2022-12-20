@@ -72,6 +72,7 @@ h2.help{
     font-size: 1.5rem;
 }
 .rules-content span {
+    font-size: 1.8rem;
     color: var(--primary-color-purple)
 }
 .rules-content u{

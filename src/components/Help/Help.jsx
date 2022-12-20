@@ -89,7 +89,7 @@ const Help = ({handleReturn}) => {
             <Image fluid src={Heart3} className={`${classes.card_4}`}/>
           </Col>
           <Col lg={8}>
-            <p>After player's action, the<u><strong><span>dealer decides</span></strong></u> whether they want to <u><strong><span>Hit or Stand.</span></strong></u></p>
+            <p>After player's action, the<u><strong><span> dealer decides</span></strong></u> whether they want to <u><strong><span>Hit or Stand.</span></strong></u></p>
           </Col>
         </Row>
         <Row className={`${classes.container__control} ${classes["rules-content"]}`}>

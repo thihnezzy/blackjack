@@ -15,7 +15,6 @@ const GameControl = ({gameOver, startGame,hit,stand, budget}) => {
       setIsValidBet(false);
       return
     }
-    console.log(isValidBet);
     setIsValidBet(true);
     
   }
