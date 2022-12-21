@@ -61,4 +61,12 @@
     -ms-transition: all  0.5s ease-out;
     -o-transition: all  0.5s ease-out;
 }
-  
+
+@media screen and (max-height: 667px) {
+    .budget{
+      font-size: 1.5rem;
+    }
+    .custom-btn{
+      font-size: 1rem;
+    }
+  }

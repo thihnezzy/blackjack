@@ -117,13 +117,17 @@
   -o-transform: rotate(10deg);
 } 
 }
-@media screen and (max-height: 650px) {
+/* XR phone */
+@media screen and (max-width: 414px) {
   .menu{
     font-size: 1rem;
   }
   .title{
     top: 10%;
     font-size: 2rem;
+  }
+  .menu section button{
+    font-size: 1.3rem;
   }
 }
   

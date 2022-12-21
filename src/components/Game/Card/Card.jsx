@@ -19,10 +19,10 @@ const Card = ({card, gameOver, isDealer}) => {
             <div className={["flip-card"]}>
                 <div className={`card__inner ${(isRevealed || (gameOver)) ? "is-flipped": null}`} onClick={(e) => !isDealer && flipping()}>
                     <div className={`card__face card__face--front`}>
-                        <Image src={Back} alt="" width={150}/>
+                        <Image fluid src={Back} alt="" width={150}/>
                     </div>
                     <div className={`card__face card__face--back`}>
-                        <Image src={card.image}  alt="" width={150}/>
+                        <Image fluid src={card.image}  alt="" width={150}/>
                     </div>
                 </div>
 	        </div>

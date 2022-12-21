@@ -69,8 +69,23 @@
   }
   .back-to-menu{
 
-      position: absolute;
+      /* position: absolute; */
       bottom: 0;
       /* right: 50%; */
       /* width: 100%; */
+  }
+/* XR phone */
+  @media screen and (max-width: 414px) {
+    .budget{
+      font-size: 1.5rem;
+    }
+    .custom-btn{
+      font-size: 1rem;
+    }
+    .hand{
+      font-size: 1rem;
+    }
+    .card-holder{
+      gap: 0.5rem;
+    }
   }

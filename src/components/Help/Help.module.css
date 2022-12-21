@@ -154,7 +154,7 @@ h2.help{
   }
 
 .back-to-menu{
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     transform: translate(0%, 150%);
     /*width: 50%;
@@ -177,3 +177,10 @@ h2.help{
         flex-direction: column-reverse;
     }
 }
+/* XR phone */
+@media screen and (max-width: 414px) {
+    .rules-content{
+        font-size: 1rem;
+
+    }  }
+    
