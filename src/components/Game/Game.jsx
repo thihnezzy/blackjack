@@ -137,7 +137,7 @@ const Game = ({ handleReturn }) => {
     let result = checkResult(dealerBot, playerHand);
     setMessage(result[0]);
     setBudget(result[1] ? parseInt(budget) + parseInt(bet) * 2 : parseInt(budget));
-    localStorage.setItem('budget', result[1] ? parseInt(budget) + parseInt(bet) : parseInt(budget) - parseInt(bet));
+    localStorage.setItem('budget', result[1] ? parseInt(budget) + parseInt(bet) * 2 : parseInt(budget));
   };
 
 
