@@ -22,6 +22,7 @@ const GameControl = ({ gameOver, startGame, hit, stand, budget, setBudget }) => 
     if (isValidBet) {
       startGame(e);
       setBudget(parseInt(budget) - parseInt(value));
+      localStorage.setItem('budget', parseInt(budget) - parseInt(value));
       setValue(0);
       setIsValidBet(false)
     }
